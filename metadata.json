@@ -1,0 +1,5 @@
+{
+  "name": "Google Review Insight Pro",
+  "description": "Analizza i commenti del tuo profilo attività Google caricando il file ZIP di Google Takeout per ottenere insight su sentiment, temi ricorrenti e suggerimenti di miglioramento.",
+  "requestFramePermissions": []
+}
