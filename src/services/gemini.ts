@@ -10,7 +10,7 @@ export async function analyzeReviews(reviews: Review[]) {
     .join("\n---\n");
 
   const response = await ai.models.generateContent({
-    model: "gemini-3-flash-preview",
+    model: "gemini-2.0-flash",
     contents: `Analizza i seguenti commenti di un'attività su Google. Fornisci un riepilogo del sentiment generale, i temi principali (positivi e negativi) e suggerimenti pratici per migliorare l'attività.
     
     Commenti:
@@ -35,7 +35,7 @@ export async function analyzeReviews(reviews: Review[]) {
 
 export async function generateReply(review: Review) {
   const response = await ai.models.generateContent({
-    model: "gemini-3-flash-preview",
+    model: "gemini-2.0-flash",
     contents: `Scrivi una risposta professionale, cortese e personalizzata a questa recensione di Google. 
     Se la recensione è positiva, ringrazia calorosamente. 
     Se è negativa, scusati in modo professionale e invita a contattare l'attività privatamente per risolvere.
